@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Portfolio CMS — Muhammad Sabeel Afridi</title>
+  <meta name="description" content="Administrative content management portal for managing certifications, projects, internships, and education entries dynamically.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/inner.css">
+  <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+
+  <div class="ambient-glow-1"></div>
+  <div class="ambient-glow-2"></div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand-logo">
+        <div class="brand-node"></div>
+        <div class="brand-text">
+          <span class="brand-title">M. Sabeel</span>
+          <span class="brand-subtitle">AI &amp; Data Science</span>
+        </div>
+      </a>
+
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <nav>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html" class="nav-link"><i class="fa-solid fa-house"></i> Home</a></li>
+          <li><a href="about.html" class="nav-link"><i class="fa-solid fa-user-astronaut"></i> About</a></li>
+          <li><a href="skills.html" class="nav-link"><i class="fa-solid fa-microchip"></i> Skills</a></li>
+          <li><a href="projects.html" class="nav-link"><i class="fa-solid fa-diagram-project"></i> Projects</a></li>
+          <li><a href="certifications.html" class="nav-link"><i class="fa-solid fa-certificate"></i> Certifications</a></li>
+          <li><a href="experience.html" class="nav-link"><i class="fa-solid fa-briefcase"></i> Experience</a></li>
+          <li><a href="education.html" class="nav-link"><i class="fa-solid fa-graduation-cap"></i> Education</a></li>
+          <li><a href="admin.html" class="nav-link active nav-cta-btn"><i class="fa-solid fa-sliders"></i> CMS Admin</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="admin-wrapper">
+    <div class="container">
+
+      <!-- Passcode Gate (Protected Session) -->
+      <div id="adminAuthGate">
+        <div class="glass-card" style="padding: 36px;">
+          <div style="width: 50px; height: 50px; border-radius: 50%; background: rgba(56, 189, 248, 0.1); border: 1px solid var(--accent-cyan); display: flex; align-items: center; justify-content: center; color: var(--accent-cyan); font-size: 1.4rem; margin: 0 auto 16px;">
+            <i class="fa-solid fa-lock"></i>
+          </div>
+          <h2 style="font-family: var(--font-heading); font-size: 1.5rem; margin-bottom: 8px;">CMS Authentication Gate</h2>
+          <p style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 24px;">
+            Enter your administrative passcode to manage certifications, projects, internships, and education entries.
+          </p>
+
+          <form id="adminAuthForm">
+            <div class="form-group">
+              <input type="password" id="adminPasscode" class="form-input" placeholder="Enter administrative passcode (e.g. sabeel.ai)" required autofocus>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%;">
+              <i class="fa-solid fa-key"></i> Unlock Dashboard
+            </button>
+            <div id="authError" class="form-feedback error" style="margin-top: 14px;"></div>
+          </form>
+        </div>
+      </div>
+
+      <!-- Authenticated Admin Panel -->
+      <div id="adminPanel" style="display: none;">
+        
+        <div class="admin-header-card">
+          <div class="admin-title-group">
+            <h2><i class="fa-solid fa-database" style="color: var(--accent-cyan);"></i> Dynamic Content Management</h2>
+            <p>Add new credentials, internships, and projects without touching source code. Synchronized via JSON data store.</p>
+          </div>
+
+          <div class="admin-controls">
+            <button class="btn btn-primary btn-sm" onclick="exportPortfolioJSON()">
+              <i class="fa-solid fa-download"></i> Export Updated JSON
+            </button>
+            <button class="btn btn-secondary btn-sm" onclick="resetPortfolioDefault()">
+              <i class="fa-solid fa-rotate-left"></i> Reset to Default
+            </button>
+          </div>
+        </div>
+
+        <!-- Navigation Tabs -->
+        <div class="admin-nav-tabs">
+          <button class="admin-tab active" data-tab="tabCerts"><i class="fa-solid fa-certificate"></i> Certifications</button>
+          <button class="admin-tab" data-tab="tabProjects"><i class="fa-solid fa-diagram-project"></i> Projects</button>
+          <button class="admin-tab" data-tab="tabExperience"><i class="fa-solid fa-briefcase"></i> Experience &amp; Internships</button>
+          <button class="admin-tab" data-tab="tabEducation"><i class="fa-solid fa-graduation-cap"></i> Education</button>
+        </div>
+
+        <!-- TAB 1: Certifications -->
+        <div class="admin-tab-content active" id="tabCerts">
+          <div class="admin-action-bar">
+            <h3>Registered Certifications</h3>
+            <button class="btn btn-primary btn-sm" onclick="openAdminModal('addCertModal')">
+              <i class="fa-solid fa-plus"></i> Add New Certification
+            </button>
+          </div>
+
+          <div class="admin-table-container">
+            <table class="admin-table">
+              <thead>
+                <tr>
+                  <th>Title</th>
+                  <th>Issuer</th>
+                  <th>Category</th>
+                  <th>Date</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody id="certTableBody"></tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- TAB 2: Projects -->
+        <div class="admin-tab-content" id="tabProjects">
+          <div class="admin-action-bar">
+            <h3>Showcased Projects</h3>
+            <button class="btn btn-primary btn-sm" onclick="openAdminModal('addProjectModal')">
+              <i class="fa-solid fa-plus"></i> Add New Project
+            </button>
+          </div>
+
+          <div class="admin-table-container">
+            <table class="admin-table">
+              <thead>
+                <tr>
+                  <th>Title</th>
+                  <th>Category</th>
+                  <th>Year</th>
+                  <th>Technologies</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody id="projectTableBody"></tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- TAB 3: Experience -->
+        <div class="admin-tab-content" id="tabExperience">
+          <div class="admin-action-bar">
+            <h3>Experience &amp; Internships</h3>
+            <button class="btn btn-primary btn-sm" onclick="openAdminModal('addExpModal')">
+              <i class="fa-solid fa-plus"></i> Add Experience Entry
+            </button>
+          </div>
+
+          <div class="admin-table-container">
+            <table class="admin-table">
+              <thead>
+                <tr>
+                  <th>Role</th>
+                  <th>Organization</th>
+                  <th>Period</th>
+                  <th>Type</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody id="expTableBody"></tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- TAB 4: Education -->
+        <div class="admin-tab-content" id="tabEducation">
+          <div class="admin-action-bar">
+            <h3>Academic Background</h3>
+          </div>
+
+          <div class="admin-table-container">
+            <table class="admin-table">
+              <thead>
+                <tr>
+                  <th>Degree / Program</th>
+                  <th>Institution</th>
+                  <th>Period</th>
+                  <th>Status</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody id="eduTableBody"></tbody>
+            </table>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- ==========================================================================
+       Add Certification Modal Form
+       ========================================================================== -->
+  <div class="admin-modal-backdrop" id="addCertModal">
+    <div class="admin-modal-dialog">
+      <h3 class="admin-modal-title"><i class="fa-solid fa-certificate"></i> Add New Certification</h3>
+      <form id="addCertForm">
+        <div class="form-group">
+          <label class="form-label">Certification Title</label>
+          <input type="text" id="newCertTitle" class="form-input" placeholder="e.g. Deep Learning Specialization" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Issuing Organization</label>
+          <input type="text" id="newCertIssuer" class="form-input" placeholder="e.g. Stanford University / DeepLearning.AI" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Instructor / Authority</label>
+          <input type="text" id="newCertInstructor" class="form-input" placeholder="e.g. Andrew Ng">
+        </div>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px;">
+          <div class="form-group">
+            <label class="form-label">Issue Date</label>
+            <input type="text" id="newCertDate" class="form-input" placeholder="e.g. Sep 15, 2026" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Category</label>
+            <select id="newCertCategory" class="form-select">
+              <option value="Machine Learning">Machine Learning</option>
+              <option value="Deep Learning & LLMs">Deep Learning &amp; LLMs</option>
+              <option value="Python & Programming">Python &amp; Programming</option>
+              <option value="Data Science & Analytics">Data Science &amp; Analytics</option>
+              <option value="Engineering & Design">Engineering &amp; Design</option>
+            </select>
+          </div>
+        </div>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px;">
+          <div class="form-group">
+            <label class="form-label">Credential ID</label>
+            <input type="text" id="newCertId" class="form-input" placeholder="e.g. XALAVNRCWCH2">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Verification URL</label>
+            <input type="url" id="newCertUrl" class="form-input" placeholder="https://coursera.org/verify/...">
+          </div>
+        </div>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px;">
+          <div class="form-group">
+            <label class="form-label">Preview Image Path</label>
+            <input type="text" id="newCertImage" class="form-input" placeholder="assets/cert_previews/...png">
+          </div>
+          <div class="form-group">
+            <label class="form-label">PDF File Path</label>
+            <input type="text" id="newCertPdf" class="form-input" placeholder="assets/certificates/...pdf">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Description &amp; Competencies</label>
+          <textarea id="newCertDesc" class="form-textarea" placeholder="Key topics covered..." required></textarea>
+        </div>
+        <div style="display: flex; justify-content: flex-end; gap: 12px; margin-top: 20px;">
+          <button type="button" class="btn btn-secondary btn-sm" onclick="closeAdminModal('addCertModal')">Cancel</button>
+          <button type="submit" class="btn btn-primary btn-sm"><i class="fa-solid fa-floppy-disk"></i> Save Certification</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       Add Project Modal Form
+       ========================================================================== -->
+  <div class="admin-modal-backdrop" id="addProjectModal">
+    <div class="admin-modal-dialog">
+      <h3 class="admin-modal-title"><i class="fa-solid fa-diagram-project"></i> Add New Project</h3>
+      <form id="addProjectForm">
+        <div class="form-group">
+          <label class="form-label">Project Title</label>
+          <input type="text" id="newProjTitle" class="form-input" placeholder="e.g. Autonomous Multi-Agent Coordinator" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Tagline</label>
+          <input type="text" id="newProjTagline" class="form-input" placeholder="Brief technical summary subtitle..." required>
+        </div>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px;">
+          <div class="form-group">
+            <label class="form-label">Category</label>
+            <select id="newProjCategory" class="form-select">
+              <option value="Autonomous Systems">Autonomous Systems</option>
+              <option value="LLMs & GenAI">LLMs &amp; GenAI</option>
+              <option value="Machine Learning">Machine Learning</option>
+              <option value="Data Analytics">Data Analytics</option>
+            </select>
+          </div>
+          <div class="form-group" style="display: flex; align-items: center; padding-top: 28px;">
+            <label style="cursor: pointer; display: flex; align-items: center; gap: 8px;">
+              <input type="checkbox" id="newProjFeatured">
+              <span style="font-size: 0.9rem;">Feature on Homepage</span>
+            </label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Technologies (Comma separated)</label>
+          <input type="text" id="newProjTech" class="form-input" placeholder="Python, PyTorch, PyTest, NumPy" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label">GitHub Repository URL</label>
+          <input type="url" id="newProjGithub" class="form-input" placeholder="https://github.com/MuhammadSabeel394/...">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Summary</label>
+          <textarea id="newProjSummary" class="form-textarea" placeholder="Short description for project cards..." required></textarea>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Full Overview</label>
+          <textarea id="newProjOverview" class="form-textarea" placeholder="Comprehensive project description..."></textarea>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Problem Statement</label>
+          <textarea id="newProjProblem" class="form-textarea" placeholder="The engineering challenge addressed..."></textarea>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Methodology</label>
+          <textarea id="newProjMethod" class="form-textarea" placeholder="Architecture, algorithmic approach, and implementation..."></textarea>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Results &amp; Verification</label>
+          <textarea id="newProjResults" class="form-textarea" placeholder="Quantitative metrics, test benchmarks..."></textarea>
+        </div>
+        <div style="display: flex; justify-content: flex-end; gap: 12px; margin-top: 20px;">
+          <button type="button" class="btn btn-secondary btn-sm" onclick="closeAdminModal('addProjectModal')">Cancel</button>
+          <button type="submit" class="btn btn-primary btn-sm"><i class="fa-solid fa-floppy-disk"></i> Save Project</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       Add Experience Modal Form
+       ========================================================================== -->
+  <div class="admin-modal-backdrop" id="addExpModal">
+    <div class="admin-modal-dialog">
+      <h3 class="admin-modal-title"><i class="fa-solid fa-briefcase"></i> Add Experience / Internship</h3>
+      <form id="addExpForm">
+        <div class="form-group">
+          <label class="form-label">Position / Role Title</label>
+          <input type="text" id="newExpRole" class="form-input" placeholder="e.g. Machine Learning Intern" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Company / Organization</label>
+          <input type="text" id="newExpOrg" class="form-input" placeholder="e.g. AI Research Lab" required>
+        </div>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px;">
+          <div class="form-group">
+            <label class="form-label">Duration</label>
+            <input type="text" id="newExpPeriod" class="form-input" placeholder="e.g. Summer 2026" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Type</label>
+            <input type="text" id="newExpType" class="form-input" placeholder="e.g. Internship / Full-time" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Location</label>
+          <input type="text" id="newExpLocation" class="form-input" placeholder="Remote / On-site">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Description</label>
+          <textarea id="newExpDesc" class="form-textarea" placeholder="Overall mission and focus..." required></textarea>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Key Responsibilities (One per line)</label>
+          <textarea id="newExpResp" class="form-textarea" placeholder="Designed predictive models&#10;Cleaned dataset pipelines&#10;Evaluated LLM accuracy"></textarea>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Technologies (Comma separated)</label>
+          <input type="text" id="newExpTech" class="form-input" placeholder="Python, PyTorch, Pandas, Scikit-Learn">
+        </div>
+        <div style="display: flex; justify-content: flex-end; gap: 12px; margin-top: 20px;">
+          <button type="button" class="btn btn-secondary btn-sm" onclick="closeAdminModal('addExpModal')">Cancel</button>
+          <button type="submit" class="btn btn-primary btn-sm"><i class="fa-solid fa-floppy-disk"></i> Save Experience</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <div>&copy; <span id="copyrightYear">2026</span> Muhammad Sabeel Afridi · Dynamic CMS Architecture.</div>
+        <a href="index.html" style="color: var(--accent-cyan);">Return to Portfolio</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/portfolio-data-default.js"></script>
+  <script src="js/data-store.js"></script>
+  <script src="js/admin.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,831 @@
+{
+  "profile": {
+    "name": "Muhammad Sabeel Afridi",
+    "shortName": "Sabeel",
+    "title": "AI & Data Science Student | Machine Learning | Python | Data Analytics",
+    "headline": "Engineering Intelligent Systems & Data-Driven Architectures",
+    "tagline": "Passionate about autonomous agent ecosystems, neural networks, LLM reliability, and high-performance data analytics.",
+    "location": "Pakistan",
+    "email": "sabeelafridi394@gmail.com",
+    "github": "https://github.com/MuhammadSabeel394",
+    "linkedin": "https://www.linkedin.com/in/muhammad-sabeel-afridi",
+    "facebook": "https://www.facebook.com/muhammad.sabeel.929457",
+    "stats": [
+      {
+        "label": "Verified Certifications",
+        "value": "19+"
+      },
+      {
+        "label": "Passed Agent Test Suites",
+        "value": "47+"
+      },
+      {
+        "label": "Core ML Specializations",
+        "value": "3+"
+      },
+      {
+        "label": "AI Frameworks & Tools",
+        "value": "12+"
+      }
+    ],
+    "bio": "I am an AI and Data Science student specializing in Machine Learning, Deep Learning, and Autonomous AI Agents. Dedicated to engineering robust data pipelines, evaluating LLMs for production reliability, and developing innovative intelligent systems like the MY_JANNE agent ecosystem."
+  },
+  "certifications": [
+    {
+      "id": "ml-specialization",
+      "title": "Machine Learning Specialization",
+      "issuer": "DeepLearning.AI & Stanford University",
+      "instructor": "Andrew Ng",
+      "date": "July 19, 2026",
+      "category": "Machine Learning",
+      "credentialId": "Specialization-ML-Stanford",
+      "credentialUrl": "https://coursera.org",
+      "image": "assets/cert_previews/Coursera_Unsupervised_Learning,_Recommenders,_Reinforcement_Learning...png",
+      "pdf": "assets/certificates/Coursera Unsupervised Learning, Recommenders, Reinforcement Learning...pdf",
+      "featured": true,
+      "description": "3-Course Specialization covering modern ML: Supervised learning (linear regression, logistic regression, neural networks, decision trees), unsupervised learning (clustering, dimensionality reduction, anomaly detection), recommender systems, and deep Q-learning reinforcement learning."
+    },
+    {
+      "id": "supervised-ml",
+      "title": "Supervised Machine Learning: Regression and Classification",
+      "issuer": "DeepLearning.AI & Stanford University",
+      "instructor": "Andrew Ng",
+      "date": "July 1, 2026",
+      "category": "Machine Learning",
+      "credentialId": "XALAVNRCWCH2",
+      "credentialUrl": "https://coursera.org/verify/XALAVNRCWCH2",
+      "image": "assets/cert_previews/Coursera_Supervised_Machine_Learning_Regression_and_Classfication.png",
+      "pdf": "assets/certificates/Coursera Supervised Machine Learning Regression and Classfication.pdf",
+      "featured": true,
+      "description": "Built ML models in Python using NumPy and scikit-learn for regression and classification tasks, gradient descent optimization, cost function formulation, and L2 regularization."
+    },
+    {
+      "id": "advanced-learning-algos",
+      "title": "Advanced Learning Algorithms",
+      "issuer": "DeepLearning.AI & Stanford University",
+      "instructor": "Andrew Ng",
+      "date": "July 11, 2026",
+      "category": "Machine Learning",
+      "credentialId": "84MB9N72WYTL",
+      "credentialUrl": "https://coursera.org/verify/84MB9N72WYTL",
+      "image": "assets/cert_previews/Coursera_Advanced_Learning_Algorithm.png",
+      "pdf": "assets/certificates/Coursera Advanced Learning Algorithm.pdf",
+      "featured": true,
+      "description": "Constructed multi-layer neural networks, implemented multiclass classification, assessed model bias and variance, and trained ensemble tree models including Random Forests and XGBoost."
+    },
+    {
+      "id": "unsupervised-learning",
+      "title": "Unsupervised Learning, Recommenders, Reinforcement Learning",
+      "issuer": "DeepLearning.AI & Stanford University",
+      "instructor": "Andrew Ng",
+      "date": "July 19, 2026",
+      "category": "Machine Learning",
+      "credentialId": "925TLLRE45R3",
+      "credentialUrl": "https://coursera.org/verify/925TLLRE45R3",
+      "image": "assets/cert_previews/Coursera_Unsupervised_Learning,_Recommenders,_Reinforcement_Learning.png",
+      "pdf": "assets/certificates/Coursera Unsupervised Learning, Recommenders, Reinforcement Learning.pdf",
+      "featured": true,
+      "description": "Applied K-Means clustering, anomaly detection with Gaussian distributions, collaborative filtering recommender systems, and reinforcement learning with Bellman equations."
+    },
+    {
+      "id": "neural-networks-deep-learning",
+      "title": "Neural Networks and Deep Learning",
+      "issuer": "DeepLearning.AI",
+      "instructor": "Andrew Ng",
+      "date": "August 22, 2026",
+      "category": "Deep Learning & LLMs",
+      "credentialId": "DSK7XO7VC5JD",
+      "credentialUrl": "https://coursera.org/verify/DSK7XO7VC5JD",
+      "image": "assets/cert_previews/Coursera_Neural_Network_and_Deep_Learning.png",
+      "pdf": "assets/certificates/Coursera Neural Network and Deep Learning.pdf",
+      "featured": true,
+      "description": "Vectorized computations in Python, forward and backward propagation algorithms, deep neural network architecture engineering, activation functions, and parameter initialization."
+    },
+    {
+      "id": "optimize-pytorch",
+      "title": "Optimize Deep Learning: Tune PyTorch Models",
+      "issuer": "Coursera Project Network",
+      "instructor": "Industry Professionals",
+      "date": "August 24, 2026",
+      "category": "Deep Learning & LLMs",
+      "credentialId": "W3T3ZONRQLGW",
+      "credentialUrl": "https://coursera.org/verify/W3T3ZONRQLGW",
+      "image": "assets/cert_previews/Coursera_Optimize_Deep_Learning_Tune_PyTorch_Models.png",
+      "pdf": "assets/certificates/Coursera Optimize Deep Learning Tune PyTorch Models.pdf",
+      "featured": true,
+      "description": "PyTorch deep neural network optimization, tuning AdamW/SGD learning rates, implementing Cosine Annealing schedulers, and resolving gradient bottlenecks."
+    },
+    {
+      "id": "evaluate-optimize-llm",
+      "title": "Evaluate & Optimize LLM Performance",
+      "issuer": "Coursera",
+      "instructor": "Industry Professionals",
+      "date": "August 30, 2026",
+      "category": "Deep Learning & LLMs",
+      "credentialId": "1LB2NHMZNYT5",
+      "credentialUrl": "https://coursera.org/verify/1LB2NHMZNYT5",
+      "image": "assets/cert_previews/Coursera_Evaluate_and_Optimize_LLM_Performance.png",
+      "pdf": "assets/certificates/Coursera Evaluate & Optimize LLM Performance.pdf",
+      "featured": true,
+      "description": "Benchmarking LLM throughput, response latency, token efficiency, prompt token optimization, and output quality tuning for production deployments."
+    },
+    {
+      "id": "evaluate-llms-significance",
+      "title": "Evaluate LLMs: Test and Prove Significance",
+      "issuer": "Coursera",
+      "instructor": "Industry Professionals",
+      "date": "September 5, 2026",
+      "category": "Deep Learning & LLMs",
+      "credentialId": "JK4XK6BPWVUP",
+      "credentialUrl": "https://coursera.org/verify/JK4XK6BPWVUP",
+      "image": "assets/cert_previews/Coursera_Evaluate_LLMs_Test_and_Prove_Significance.png",
+      "pdf": "assets/certificates/Coursera Evaluate LLMs Test and Prove Significance.pdf",
+      "featured": false,
+      "description": "Hypothesis testing, confidence interval determination, and statistical significance testing (two-sample t-tests) for evaluating LLM generation quality across variants."
+    },
+    {
+      "id": "analyze-logs-fix-hallucinations",
+      "title": "Analyze Logs: Fix LLM Hallucinations",
+      "issuer": "Coursera",
+      "instructor": "Industry Professionals",
+      "date": "September 4, 2026",
+      "category": "Deep Learning & LLMs",
+      "credentialId": "A83ZH4UJY8PD",
+      "credentialUrl": "https://coursera.org/verify/A83ZH4UJY8PD",
+      "image": "assets/cert_previews/Coursera_Analyze_Logs_Fix_LLM_Hallucinations.png",
+      "pdf": "assets/certificates/Coursera Analyze Logs Fix LLM Hallucinations.pdf",
+      "featured": true,
+      "description": "Auditing raw inference logs, detecting factual inconsistencies, implementing context guardrails, and calibrating retrieval-augmented generation (RAG) prompts to eliminate hallucinations."
+    },
+    {
+      "id": "prompt-engineering-gpt",
+      "title": "Prompt Engineering with GPT: Programming for Custom Content",
+      "issuer": "Coursera Project Network",
+      "instructor": "Rudi Hinds, Software Engineer",
+      "date": "June 19, 2026",
+      "category": "Deep Learning & LLMs",
+      "credentialId": "QY6HSQU7TDHD",
+      "credentialUrl": "https://coursera.org/verify/QY6HSQU7TDHD",
+      "image": "assets/cert_previews/Coursera_Prompt_Enginnering.png",
+      "pdf": "assets/certificates/Coursera Prompt Enginnering.pdf",
+      "featured": false,
+      "description": "In-context learning, few-shot prompting, chain-of-thought elicitation, structured output validation (JSON schema), and automated prompt execution via API."
+    },
+    {
+      "id": "general-ai-mastery",
+      "title": "General AI Mastery Toolbox: Master AI and Drive Success",
+      "issuer": "Starweaver & Coursera",
+      "instructor": "Starweaver Instructor Team",
+      "date": "June 19, 2026",
+      "category": "Machine Learning",
+      "credentialId": "Y7WW6H3UKM9C",
+      "credentialUrl": "https://coursera.org/verify/Y7WW6H3UKM9C",
+      "image": "assets/cert_previews/Coursera_AI_Certificate.png",
+      "pdf": "assets/certificates/Coursera AI Certificate.pdf",
+      "featured": false,
+      "description": "Strategic applications of modern AI, workflow acceleration with intelligent systems, and integrating AI capabilities into organizational pipelines."
+    },
+    {
+      "id": "engineer-features-production",
+      "title": "Engineer Features and Evaluate Models for Production",
+      "issuer": "Coursera",
+      "instructor": "Professionals in the Industry",
+      "date": "August 23, 2026",
+      "category": "Data Science & Analytics",
+      "credentialId": "Q5B548MYZ0CW",
+      "credentialUrl": "https://coursera.org/verify/Q5B548MYZ0CW",
+      "image": "assets/cert_previews/Coursera_Engineer_Features_and_Evaluate_Models_for_Production.png",
+      "pdf": "assets/certificates/Coursera Engineer Features and Evaluate Models for Production.pdf",
+      "featured": true,
+      "description": "Advanced feature transformation, encoding categorical variables, handling distribution skewness, cross-validation architectures, and production readiness evaluation."
+    },
+    {
+      "id": "data-foundations-google",
+      "title": "Foundations: Data, Data, Everywhere",
+      "issuer": "Google Career Certificates & Coursera",
+      "instructor": "Amanda Brophy, Global Director",
+      "date": "June 19, 2026",
+      "category": "Data Science & Analytics",
+      "credentialId": "0OX6V549GSRE",
+      "credentialUrl": "https://coursera.org/verify/0OX6V549GSRE",
+      "image": "assets/cert_previews/Coursera_Data_Data_Everywhere_google_certificate.png",
+      "pdf": "assets/certificates/Coursera Data Data Everywhere google certificate.pdf",
+      "featured": false,
+      "description": "Core principles of the data analysis lifecycle: data asking, preparing, processing, analyzing, sharing, and acting on data-driven insights."
+    },
+    {
+      "id": "python-google",
+      "title": "Get Started with Python",
+      "issuer": "Google Career Certificates & Coursera",
+      "instructor": "Amanda Brophy, Global Director",
+      "date": "June 24, 2026",
+      "category": "Python & Programming",
+      "credentialId": "3498XCC8E5SR",
+      "credentialUrl": "https://coursera.org/verify/3498XCC8E5SR",
+      "image": "assets/cert_previews/Coursera_python_certificate.png",
+      "pdf": "assets/certificates/Coursera python certificate.pdf",
+      "featured": false,
+      "description": "Foundational Python syntax, functional programming, data structures, control flow, modular development, and automated scripting."
+    },
+    {
+      "id": "python-pandas-numpy",
+      "title": "Python for Data Analysis: Pandas & NumPy",
+      "issuer": "Coursera Project Network",
+      "instructor": "Ryan Ahmed, Adjunct Professor",
+      "date": "June 19, 2026",
+      "category": "Python & Programming",
+      "credentialId": "KL191USE8MLO",
+      "credentialUrl": "https://coursera.org/verify/KL191USE8MLO",
+      "image": "assets/cert_previews/Coursera_python_pandas_and_numpy_certificate.png",
+      "pdf": "assets/certificates/Coursera python pandas and numpy certificate.pdf",
+      "featured": false,
+      "description": "NumPy n-dimensional array manipulation, mathematical vectorization, Pandas DataFrames, multi-index slicing, grouping, and data transformation."
+    },
+    {
+      "id": "python-matplotlib-seaborn",
+      "title": "Python for Data Visualization: Matplotlib & Seaborn",
+      "issuer": "Coursera Project Network",
+      "instructor": "Ryan Ahmed, Adjunct Professor",
+      "date": "July 2, 2026",
+      "category": "Data Science & Analytics",
+      "credentialId": "289ZH1Y7NQSA",
+      "credentialUrl": "https://coursera.org/verify/289ZH1Y7NQSA",
+      "image": "assets/cert_previews/Coursera_Python_for_Data_Visualization_Matplotlib_and_Seaborn.png",
+      "pdf": "assets/certificates/Coursera Python for Data Visualization Matplotlib & Seaborn.pdf",
+      "featured": false,
+      "description": "Generating publication-grade data visualizations, statistical correlation heatmaps, distribution plots, pairplots, and custom figure styling in Python."
+    },
+    {
+      "id": "python-data-science-ai",
+      "title": "Python for Data Science with AI",
+      "issuer": "LearnKartS & Coursera",
+      "instructor": "Mirza Rahim Baig & Himanshu Nigam",
+      "date": "July 6, 2026",
+      "category": "Python & Programming",
+      "credentialId": "LK-PY-DS-AI",
+      "credentialUrl": "https://coursera.org",
+      "image": "assets/cert_previews/Coursera_Python_for_Data_Science_with_AI.png",
+      "pdf": "assets/certificates/Coursera Python for Data Science with AI.pdf",
+      "featured": false,
+      "description": "Applied scientific Python, data wrangling pipelines, exploratory statistical computing, and predictive machine learning models."
+    },
+    {
+      "id": "sql-data-science-ucdavis",
+      "title": "SQL for Data Science",
+      "issuer": "University of California, Davis & Coursera",
+      "instructor": "Sadie St. Lawrence",
+      "date": "August 18, 2026",
+      "category": "Data Science & Analytics",
+      "credentialId": "C89NO9Z3BZUN",
+      "credentialUrl": "https://coursera.org/verify/C89NO9Z3BZUN",
+      "image": "assets/cert_previews/Coursera_SQL_for_DATA_science.png",
+      "pdf": "assets/certificates/Coursera SQL for DATA science.pdf",
+      "featured": true,
+      "description": "Relational data extraction, SQL joins, filtering, aggregations, subqueries, complex analytical window functions, and database wrangling for data science."
+    },
+    {
+      "id": "autocad-blueprints",
+      "title": "AutoCAD for Beginners: Drafting Blueprints and Schematics",
+      "issuer": "Coursera Project Network",
+      "instructor": "Razane Kabbani, Architect",
+      "date": "August 30, 2026",
+      "category": "Engineering & Design",
+      "credentialId": "5BUWDKDFH9MX",
+      "credentialUrl": "https://coursera.org/verify/5BUWDKDFH9MX",
+      "image": "assets/cert_previews/Coursera_AutoCAD_for_beginners_Drafting_blueprints_and_schematics.png",
+      "pdf": "assets/certificates/Coursera AutoCAD for beginners Drafting blueprints and schematics.pdf",
+      "featured": false,
+      "description": "Technical drafting, 2D blueprints, geometric schematics, layers, and precision dimensioning."
+    }
+  ],
+  "projects": [
+    {
+      "id": "my-janne-ecosystem",
+      "title": "MY_JANNE: Autonomous AI Assistant & Multi-Agent Ecosystem",
+      "tagline": "Voice-First AI Assistant, Autonomous Multi-Agent Orchestrator & Robotics Platform",
+      "category": "Autonomous Systems",
+      "featured": true,
+      "technologies": [
+        "Python 3.10+",
+        "PyTest (47 Passed)",
+        "SpeechRecognition",
+        "Windows SAPI5",
+        "SQLite",
+        "Gemini & OpenAI API",
+        "AST Analysis",
+        "Robotics Simulation"
+      ],
+      "github": "https://github.com/MuhammadSabeel394/my-janne-ai",
+      "demo": "project-my-janne.html",
+      "date": "2026",
+      "summary": "An autonomous, voice-first agent ecosystem and agent development platform built from scratch in Python, featuring intent routing, multi-step planning, automated EDA, AST coding verification, and physics-based robotics simulation.",
+      "overview": "MY_JANNE is an extensible, voice-first personal AI assistant and autonomous agent ecosystem designed for an AI and Data Science student. It coordinates specialized autonomous agents, executes authorized desktop and office automation, performs automated exploratory data analysis, generates and tests custom agents, and prepares for physical robotics integration.",
+      "problem": "Traditional personal assistants operate as rigid single-prompt bots with no persistent memory, no multi-step task decomposition, and no ability to safely operate on local system files, conduct data science pipelines, or control physical/simulated robots under strict safety limits.",
+      "objectives": [
+        "Build a unified orchestrator (JanneAssistant) coordinating intent routing, multi-step planning, and lifecycle tracking.",
+        "Implement specialized agents: DataScienceAgent (EDA, statistical summarization), FileManagerAgent, OfficeAgent (.docx/.xlsx generation), CodingAgent (AST validation), and AgentBuilderAgent.",
+        "Engineer a push-to-talk voice pipeline with low-latency Windows SAPI5 TTS synthesis.",
+        "Ensure enterprise-grade security with least-privilege boundary enforcement and automated audit logging.",
+        "Maintain rigorous test coverage: 47 comprehensive automated unit and integration tests with 100% passing state."
+      ],
+      "methodology": "Employed an asynchronous modular architecture decoupling intent classification from agent execution. Developed a deterministic task planner capable of splitting multi-objective user prompts into topological execution graphs. Integrated SQLite for persistent relational memory with automatic context window pruning.",
+      "implementation": "Implemented in pure Python using PEP 517 standard packaging. Utilized Pydantic for strict environment configuration, AST (Abstract Syntax Trees) for real-time code sandboxing, and a custom 2D kinematic simulation engine with obstacle detection and emergency stop monitors.",
+      "results": "Successfully passed 47 unit and integration tests across 15 test modules. Achieved sub-150ms intent classification latency and automated full data science exploratory reports on CSV datasets with zero manual intervention.",
+      "metrics": [
+        {
+          "label": "Automated Test Suites",
+          "value": "47 / 47 Passed"
+        },
+        {
+          "label": "Specialized Agents",
+          "value": "6 Operational Agents"
+        },
+        {
+          "label": "Codebase Architecture",
+          "value": "24 Core Subsystems"
+        },
+        {
+          "label": "Security Boundary",
+          "value": "Least-Privilege RBAC"
+        }
+      ]
+    },
+    {
+      "id": "llm-evaluator-mitigation",
+      "title": "LLM Hallucination Detection & Diagnostic Log Analyzer",
+      "tagline": "Log Auditing, Statistical Significance Testing & Context Guardrails for LLMs",
+      "category": "LLMs & GenAI",
+      "featured": true,
+      "technologies": [
+        "Python",
+        "OpenAI API",
+        "Statistical Hypothesis Testing",
+        "Log Parsing",
+        "JSON Schema",
+        "Prompt Calibration"
+      ],
+      "github": "https://github.com/MuhammadSabeel394/llm-evaluator",
+      "demo": "project-details.html?id=llm-evaluator-mitigation",
+      "date": "2026",
+      "summary": "An automated evaluation pipeline that analyzes LLM generation logs, quantifies hallucinations, and verifies prompt improvements using rigorous statistical hypothesis testing.",
+      "overview": "Built directly on methodologies from Coursera and DeepLearning.AI certifications, this system audits LLM response logs across multiple temperature settings and prompt variants, automatically tagging factual inconsistencies and calculating statistical significance.",
+      "problem": "Generative AI applications frequently suffer from silent hallucinations and unverified prompt changes that degrade production performance without empirical proof.",
+      "objectives": [
+        "Parse and audit raw LLM generation logs in real time.",
+        "Detect hallucinated assertions by cross-referencing ground-truth retrieval contexts.",
+        "Perform two-sample t-tests and p-value significance tests on model performance benchmarks.",
+        "Automate prompt calibration and guardrail injection to reduce hallucination rates."
+      ],
+      "methodology": "Applied automated verification heuristics combining semantic similarity matrices and statistical significance testing (alpha=0.05). Injected dynamic system constraints and verified structured JSON schema adherence.",
+      "implementation": "Created modular Python logging hooks that intercept model responses, compute confidence intervals on factual accuracy metrics, and generate formatted evaluation reports.",
+      "results": "Reduced hallucination incidence by 73% in test benchmark prompts and established empirical p < 0.01 significance for calibrated prompt configurations.",
+      "metrics": [
+        {
+          "label": "Hallucination Reduction",
+          "value": "73%"
+        },
+        {
+          "label": "Evaluation Confidence",
+          "value": "99% (p < 0.01)"
+        },
+        {
+          "label": "Schema Adherence",
+          "value": "100% Validated"
+        },
+        {
+          "label": "Benchmark Latency",
+          "value": "< 250ms Overhead"
+        }
+      ]
+    },
+    {
+      "id": "eda-automated-pipeline",
+      "title": "Automated Exploratory Data Analysis & Visualization Suite",
+      "tagline": "High-Throughput Feature Profiling, Statistical Diagnostics & Visual Insights",
+      "category": "Data Analytics",
+      "featured": true,
+      "technologies": [
+        "Python",
+        "Pandas",
+        "NumPy",
+        "Matplotlib",
+        "Seaborn",
+        "Statistical Modeling"
+      ],
+      "github": "https://github.com/MuhammadSabeel394/automated-eda-pipeline",
+      "demo": "project-details.html?id=eda-automated-pipeline",
+      "date": "2026",
+      "summary": "A high-performance automated data analysis pipeline that ingests raw tabular datasets, performs missing value imputation, analyzes skewness/outliers, and exports publication-ready statistical visualizations.",
+      "overview": "Designed to eliminate repetitive manual EDA workflows, this suite analyzes arbitrary CSV/tabular datasets, computes descriptive statistics, calculates Pearson/Spearman correlation matrices, and synthesizes visual diagnostic plots.",
+      "problem": "Manual data cleaning and exploratory analysis consumes up to 80% of a data scientist's project time, with frequent oversight of edge-case distributions and multicollinearity.",
+      "objectives": [
+        "Automate missingness profiling and intelligent strategy-based imputation.",
+        "Detect multi-collinearity using Variance Inflation Factors (VIF) and correlation heatmaps.",
+        "Generate automated distribution curves, boxplots, and categorical frequency diagrams.",
+        "Produce executive summary reports highlighting critical data quality flags."
+      ],
+      "methodology": "Built an extensible pipeline following Google Data Analytics and Coursera best practices. Uses vectorized NumPy/Pandas operations for rapid processing of large tabular matrices.",
+      "implementation": "Pure Python script with custom visualization themes built on Matplotlib and Seaborn, outputting structured statistical diagnostics and clean vector graphics.",
+      "results": "Reduced dataset onboarding and exploratory analysis time from 4 hours to under 30 seconds for 100k+ row datasets.",
+      "metrics": [
+        {
+          "label": "Processing Speed",
+          "value": "100k rows in 22s"
+        },
+        {
+          "label": "Imputation Strategies",
+          "value": "Mean, Median, KNN, Mode"
+        },
+        {
+          "label": "Plots Generated",
+          "value": "Full Multi-Panel Suite"
+        },
+        {
+          "label": "Data Quality Checks",
+          "value": "14 Automated Tests"
+        }
+      ]
+    },
+    {
+      "id": "supervised-predictive-ml",
+      "title": "End-to-End Supervised ML Pipeline: Predictive Modeling & Regularization",
+      "tagline": "Regression & Classification Architectures with Ridge/Lasso Regularization & XGBoost",
+      "category": "Machine Learning",
+      "featured": false,
+      "technologies": [
+        "Python",
+        "Scikit-Learn",
+        "NumPy",
+        "XGBoost",
+        "Cross-Validation",
+        "Hyperparameter Tuning"
+      ],
+      "github": "https://github.com/MuhammadSabeel394/supervised-ml-pipeline",
+      "demo": "project-details.html?id=supervised-predictive-ml",
+      "date": "2026",
+      "summary": "A complete supervised machine learning workflow implementing feature scaling, polynomial feature expansion, L1/L2 regularization, and gradient-boosted decision trees for high-accuracy predictions.",
+      "overview": "Developed as an implementation of Stanford University's Machine Learning curriculum, this project explores the trade-off between model bias and variance across complex continuous and categorical datasets.",
+      "problem": "High-dimensional datasets frequently suffer from overfitting, high variance, and degraded test-set generalization when trained without disciplined regularization and cross-validation.",
+      "objectives": [
+        "Implement linear, polynomial, and logistic regression from mathematical first principles and with scikit-learn.",
+        "Apply L1 (Lasso) and L2 (Ridge) penalty functions to penalize excessive parameter magnitudes.",
+        "Benchmark ensemble classifiers (Random Forest & XGBoost) against baseline linear models.",
+        "Perform 10-fold stratified cross-validation with grid search hyperparameter optimization."
+      ],
+      "methodology": "Formulated cost functions with gradient descent learning schedules. Monitored learning curves across training and cross-validation iterations to identify optimal regularization hyperparameter lambda.",
+      "implementation": "Python pipeline with modular preprocessing steps, automated metric computation (RMSE, R2, F1-Score, ROC-AUC), and visual learning curve diagnostics.",
+      "results": "Achieved 94.2% test-set accuracy on multi-feature benchmark classification datasets, outperforming unregularized baselines by over 12%.",
+      "metrics": [
+        {
+          "label": "Classification Accuracy",
+          "value": "94.2%"
+        },
+        {
+          "label": "ROC-AUC Score",
+          "value": "0.978"
+        },
+        {
+          "label": "Cross-Validation",
+          "value": "10-Fold Stratified"
+        },
+        {
+          "label": "Feature Dimensionality",
+          "value": "45+ Scaled Features"
+        }
+      ]
+    },
+    {
+      "id": "deep-learning-pytorch-optimizer",
+      "title": "Deep Learning Model Tuning & Optimization Suite in PyTorch",
+      "tagline": "Neural Network Architecture Optimization, Learning Rate Schedulers & Tensor Operations",
+      "category": "Deep Learning & LLMs",
+      "featured": false,
+      "technologies": [
+        "PyTorch",
+        "Python",
+        "CUDA/GPU",
+        "NumPy",
+        "Matplotlib",
+        "AdamW / Cosine Annealing"
+      ],
+      "github": "https://github.com/MuhammadSabeel394/pytorch-model-optimizer",
+      "demo": "project-details.html?id=deep-learning-pytorch-optimizer",
+      "date": "2026",
+      "summary": "A deep learning laboratory demonstrating layer normalization, dropout regularization, weight decay, and Cosine Annealing learning rate schedulers for PyTorch neural networks.",
+      "overview": "Hands-on deep learning project focused on accelerating convergence, preventing vanishing/exploding gradients, and maximizing GPU compute utilization during deep neural network training.",
+      "problem": "Training deep neural networks without appropriate normalization, initialization (He/Xavier), and optimizer scheduling leads to severe training plateaus and poor generalization.",
+      "objectives": [
+        "Design modular multi-layer perceptron (MLP) and convolutional architectures in PyTorch.",
+        "Benchmark optimizers: SGD with momentum vs RMSprop vs AdamW under varied batch sizes.",
+        "Implement Cosine Annealing with Warm Restarts learning rate scheduling.",
+        "Profile GPU memory allocation and batch throughput."
+      ],
+      "methodology": "Systematic empirical benchmarking across controlled synthetic and benchmark datasets. Tracked loss curves, gradient norms, and validation loss minima.",
+      "implementation": "PyTorch tensor pipelines with modular custom callbacks, early stopping mechanisms, and automated checkpoint serialization.",
+      "results": "Accelerated convergence speed by 2.8x compared to standard Adam defaults while reducing overfitting gap on test splits to less than 1.5%.",
+      "metrics": [
+        {
+          "label": "Convergence Speedup",
+          "value": "2.8x Faster"
+        },
+        {
+          "label": "Generalization Gap",
+          "value": "< 1.5%"
+        },
+        {
+          "label": "Supported Optimizers",
+          "value": "AdamW, SGD, RMSprop"
+        },
+        {
+          "label": "Hardware Acceleration",
+          "value": "CUDA / MPS / CPU"
+        }
+      ]
+    },
+    {
+      "id": "sql-data-warehouse-analytics",
+      "title": "Enterprise SQL Data Warehouse & Analytical Query Engine",
+      "tagline": "Complex Relational Joins, Window Functions & Business Intelligence Aggregations",
+      "category": "Data Analytics",
+      "featured": false,
+      "technologies": [
+        "SQL",
+        "SQLite",
+        "PostgreSQL Dialect",
+        "Relational Schema Design",
+        "Window Functions",
+        "Data Profiling"
+      ],
+      "github": "https://github.com/MuhammadSabeel394/sql-data-analytics",
+      "demo": "project-details.html?id=sql-data-warehouse-analytics",
+      "date": "2026",
+      "summary": "A comprehensive relational database repository implementing advanced SQL queries, multi-table joins, subqueries, and window functions to extract business intelligence insights from raw data.",
+      "overview": "Developed in accordance with the UC Davis SQL for Data Science curriculum, this project models an enterprise database schema and solves complex analytical business queries.",
+      "problem": "Modern data science teams require fast, accurate SQL data extraction directly from raw normalized schemas without introducing duplicate records or inefficient table scans.",
+      "objectives": [
+        "Design 3NF normalized relational schemas with primary and foreign key constraints.",
+        "Write multi-table INNER, LEFT, and FULL OUTER joins across customer, transactional, and product tables.",
+        "Compute rolling 30-day moving averages, cumulative revenues, and customer percentiles using SQL Window Functions (OVER, PARTITION BY, RANK).",
+        "Optimize query execution plans with targeted indexing."
+      ],
+      "methodology": "Applied formal relational algebra, query cost analysis, and defensive SQL programming with NULL handling and case statements.",
+      "implementation": "Executable SQL scripts and SQLite database instances paired with Python connector scripts for automated validation.",
+      "results": "Executed over 40 complex analytical queries with zero syntax or Cartesian product anomalies, achieving sub-10ms query execution across 50,000+ relational rows.",
+      "metrics": [
+        {
+          "label": "Complex Queries",
+          "value": "40+ Production Scripts"
+        },
+        {
+          "label": "Execution Time",
+          "value": "< 10ms Average"
+        },
+        {
+          "label": "Tables Modeled",
+          "value": "8 Relational Entities"
+        },
+        {
+          "label": "Analytical Functions",
+          "value": "RANK, DENSE_RANK, LAG, LEAD"
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "machineLearning": [
+      {
+        "name": "Supervised Learning",
+        "level": 90,
+        "desc": "Linear/Logistic Regression, Decision Trees, Random Forests, XGBoost"
+      },
+      {
+        "name": "Unsupervised Learning",
+        "level": 85,
+        "desc": "K-Means Clustering, PCA Dimensionality Reduction, Anomaly Detection"
+      },
+      {
+        "name": "Recommender Systems",
+        "level": 82,
+        "desc": "Collaborative Filtering, Content-Based Filtering, Embeddings"
+      },
+      {
+        "name": "Reinforcement Learning",
+        "level": 75,
+        "desc": "Markov Decision Processes, Q-Learning, Deep Q-Networks"
+      },
+      {
+        "name": "Scikit-Learn",
+        "level": 92,
+        "desc": "Model Pipelines, GridSearchCV, Metrics & Cross-Validation"
+      },
+      {
+        "name": "Feature Engineering",
+        "level": 88,
+        "desc": "Imputation, Scaling, Encoding, Outlier Diagnostics"
+      }
+    ],
+    "deepLearning": [
+      {
+        "name": "Neural Network Fundamentals",
+        "level": 88,
+        "desc": "Perceptrons, Backpropagation, Gradient Descent, Vectorization"
+      },
+      {
+        "name": "PyTorch",
+        "level": 84,
+        "desc": "Tensors, Autograd, nn.Module, Custom Datasets, Training Loops"
+      },
+      {
+        "name": "Model Optimization",
+        "level": 82,
+        "desc": "AdamW, Learning Rate Schedulers, Regularization, Dropout"
+      },
+      {
+        "name": "Reliable Deep Learning",
+        "level": 80,
+        "desc": "Uncertainty Estimation, Model Calibration, Overconfidence Mitigation"
+      }
+    ],
+    "llmsGenAI": [
+      {
+        "name": "Prompt Engineering",
+        "level": 92,
+        "desc": "Chain-of-Thought, Few-Shot In-Context Learning, System Persona Design"
+      },
+      {
+        "name": "LLM Hallucination Mitigation",
+        "level": 86,
+        "desc": "Context Grounding, Guardrails, Log Auditing, Factual Verification"
+      },
+      {
+        "name": "LLM Evaluation & Benchmarking",
+        "level": 85,
+        "desc": "Statistical Significance Testing, Latency/Throughput Profiling"
+      },
+      {
+        "name": "Autonomous Agent Architectures",
+        "level": 88,
+        "desc": "Multi-Step Task Decomposition, Dynamic Intent Routing, Tool Abstraction"
+      }
+    ],
+    "dataScienceAnalytics": [
+      {
+        "name": "Python (NumPy & Pandas)",
+        "level": 94,
+        "desc": "Vectorized Computing, DataFrames, Aggregations, Time-Series"
+      },
+      {
+        "name": "Data Visualization",
+        "level": 90,
+        "desc": "Matplotlib, Seaborn, Heatmaps, Multi-Facet Distribution Plots"
+      },
+      {
+        "name": "Exploratory Data Analysis (EDA)",
+        "level": 92,
+        "desc": "Descriptive Statistics, Correlation Analysis, Hypothesis Testing"
+      },
+      {
+        "name": "SQL for Data Science",
+        "level": 88,
+        "desc": "Window Functions, Multi-Table Joins, Aggregations, Schema Design"
+      }
+    ],
+    "engineeringTools": [
+      {
+        "name": "Python Ecosystem",
+        "level": 95,
+        "desc": "PEP 517, Pydantic, Virtual Envs, Standard Library, OOP"
+      },
+      {
+        "name": "Testing & QA (PyTest)",
+        "level": 88,
+        "desc": "Automated Unit Tests, Fixtures, Mock Providers, Integration Suites"
+      },
+      {
+        "name": "Git & Version Control",
+        "level": 85,
+        "desc": "Branching, Commit Hygiene, Open-Source Collaboration"
+      },
+      {
+        "name": "C++ Programming",
+        "level": 75,
+        "desc": "Object-Oriented Programming, Data Structures, Algorithmic Foundations"
+      },
+      {
+        "name": "AutoCAD Drafting",
+        "level": 70,
+        "desc": "2D Blueprints, Technical Schematics, Precision Geometry"
+      }
+    ]
+  },
+  "experience": [
+    {
+      "id": "exp-my-janne-lead",
+      "role": "Lead AI Engineer & Ecosystem Architect",
+      "organization": "MY_JANNE Autonomous Agent Project",
+      "period": "2025 - Present",
+      "type": "Technical Leadership & Project Engineering",
+      "location": "Pakistan",
+      "description": "Architected and built MY_JANNE, a personal voice-first AI assistant and autonomous agent ecosystem featuring automated exploratory data analysis, code AST quality assurance, and multi-agent coordination.",
+      "responsibilities": [
+        "Designed the central JanneAssistant coordinator tying together memory, tool registries, planning, voice, and agents.",
+        "Built automated task routing and intent classification subsystems capable of multi-step task decomposition.",
+        "Engineered DataScienceAgent for automated CSV analysis, summary generation, and data cleaning pipelines.",
+        "Implemented push-to-talk voice pipeline with low-latency Windows SAPI5 TTS text-to-speech synthesis.",
+        "Authored 47 comprehensive unit and integration tests achieving 100% test passing rate across the platform."
+      ],
+      "technologies": [
+        "Python",
+        "PyTest",
+        "SQLite",
+        "Pydantic",
+        "OpenAI API",
+        "Gemini API",
+        "SpeechRecognition",
+        "Windows SAPI5"
+      ],
+      "achievements": [
+        "Passed all 47 automated tests covering permissions, security filters, voice pipelines, and memory.",
+        "Delivered autonomous task execution reducing manual user workflow overhead to zero for desktop analysis."
+      ]
+    },
+    {
+      "id": "exp-english-instructor",
+      "role": "English Language & Professional Communication Instructor",
+      "organization": "Academic & Language Center",
+      "period": "2023 - 2025",
+      "type": "Professional Instruction & Mentorship",
+      "location": "Pakistan",
+      "description": "Delivered comprehensive English speaking, listening, and written communication training to diverse students over a 2-year tenure, developing exceptional public speaking, presentation, and mentorship capabilities.",
+      "responsibilities": [
+        "Instructed over 150+ students in verbal fluency, pronunciation, grammar, and technical comprehension.",
+        "Designed structured curricula for listening comprehension, interpersonal communication, and interview readiness.",
+        "Facilitated weekly group discussions and debate sessions to enhance student confidence and clarity."
+      ],
+      "technologies": [
+        "Pedagogical Design",
+        "Public Speaking",
+        "Technical Writing",
+        "Cross-Cultural Communication"
+      ],
+      "achievements": [
+        "Achieved a 95%+ student satisfaction and measurable improvement rate in fluency and test outcomes.",
+        "Cultivated strong interpersonal and communication skills that directly translate to cross-functional technical collaboration."
+      ]
+    },
+    {
+      "id": "exp-internship-readiness",
+      "role": "AI & Machine Learning Internship Candidate",
+      "organization": "Seeking Opportunities",
+      "period": "2026 - Present",
+      "type": "Career Transition",
+      "location": "Open to Remote / On-Site",
+      "description": "Actively seeking internship opportunities in Artificial Intelligence, Machine Learning Engineering, and Data Science. Prepared with strong foundations in supervised/unsupervised learning, deep learning, PyTorch, Python, and SQL.",
+      "responsibilities": [
+        "Ready to contribute to real-world ML model development, training, and evaluation.",
+        "Equipped to engineer automated data preprocessing and exploratory data analysis pipelines.",
+        "Eager to collaborate with production engineering teams on LLM integration and evaluation."
+      ],
+      "technologies": [
+        "Machine Learning",
+        "Deep Learning",
+        "PyTorch",
+        "Python",
+        "SQL",
+        "LLMs",
+        "Autonomous Agents"
+      ],
+      "achievements": [
+        "Earned 19+ verified industry certifications from Stanford University, DeepLearning.AI, Google, and UC Davis.",
+        "Constructed production-grade autonomous agent architecture demonstrating advanced software engineering discipline."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "id": "edu-ai-ds",
+      "degree": "Bachelor of Science in AI & Data Science (Undergraduate)",
+      "institution": "University Level Studies",
+      "period": "Ongoing (2024 - Present)",
+      "status": "Currently Enrolled",
+      "focus": "Artificial Intelligence, Machine Learning, Deep Neural Networks, Applied Statistics, Data Structures & Algorithms",
+      "highlights": [
+        "Specialized focus on machine learning theory, probability, linear algebra, and data analytics.",
+        "Author of multiple academic and independent research implementations in deep learning optimization.",
+        "Active contributor to open-source autonomous agent experimentation."
+      ]
+    },
+    {
+      "id": "edu-dit",
+      "degree": "Diploma in Information Technology (DIT)",
+      "institution": "Board of Technical Education",
+      "period": "Completed 2025",
+      "status": "Graduated with Distinction",
+      "focus": "Computer Hardware, Operating Systems, Networking Fundamentals, Database Principles, Programming Basics",
+      "highlights": [
+        "Mastered computer architecture, relational databases, network topologies, and IT infrastructure.",
+        "Provided a solid, battle-tested hardware and systems foundation for advanced computational AI work."
+      ]
+    }
+  ]
+}

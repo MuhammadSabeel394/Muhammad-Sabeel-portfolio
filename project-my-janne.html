@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MY_JANNE Architecture & Specifications — Muhammad Sabeel Afridi</title>
+  <meta name="description" content="Technical architecture, test suite metrics, and subsystems of MY_JANNE: Voice-first Autonomous Multi-Agent Ecosystem.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/inner.css">
+  <link rel="stylesheet" href="css/projects.css">
+</head>
+<body>
+
+  <div class="ambient-glow-1"></div>
+  <div class="ambient-glow-2"></div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand-logo">
+        <div class="brand-node"></div>
+        <div class="brand-text">
+          <span class="brand-title">M. Sabeel</span>
+          <span class="brand-subtitle">AI &amp; Data Science</span>
+        </div>
+      </a>
+
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <nav>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html" class="nav-link"><i class="fa-solid fa-house"></i> Home</a></li>
+          <li><a href="about.html" class="nav-link"><i class="fa-solid fa-user-astronaut"></i> About</a></li>
+          <li><a href="skills.html" class="nav-link"><i class="fa-solid fa-microchip"></i> Skills</a></li>
+          <li><a href="projects.html" class="nav-link active"><i class="fa-solid fa-diagram-project"></i> Projects</a></li>
+          <li><a href="certifications.html" class="nav-link"><i class="fa-solid fa-certificate"></i> Certifications</a></li>
+          <li><a href="experience.html" class="nav-link"><i class="fa-solid fa-briefcase"></i> Experience</a></li>
+          <li><a href="education.html" class="nav-link"><i class="fa-solid fa-graduation-cap"></i> Education</a></li>
+          <li><a href="contact.html" class="nav-link nav-cta-btn"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Spec Hero -->
+  <main>
+    <section class="project-spec-hero">
+      <div class="container">
+        <div class="breadcrumbs">
+          <a href="index.html">Home</a> <span>/</span>
+          <a href="projects.html">Projects</a> <span>/</span>
+          <span>MY_JANNE Flagship Architecture</span>
+        </div>
+        <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 12px;">
+          <span class="badge badge-ai"><i class="fa-solid fa-robot"></i> Flagship Architecture</span>
+          <span class="badge badge-verified"><i class="fa-solid fa-circle-check"></i> 47 / 47 Unit Tests Passed</span>
+        </div>
+        <h1 class="project-spec-title">MY_JANNE: Autonomous Multi-Agent Ecosystem &amp; Studio</h1>
+        <p class="project-spec-tagline">
+          Voice-First AI Assistant, Autonomous Multi-Agent Orchestrator, AST Code Quality Gate &amp; Robotics Simulation Platform
+        </p>
+
+        <div class="project-spec-meta-bar">
+          <div class="spec-meta-item">
+            <i class="fa-solid fa-calendar-check"></i>
+            <span>Architecture Version: <strong>v2.0 (2026)</strong></span>
+          </div>
+          <div class="spec-meta-item">
+            <i class="fa-solid fa-terminal"></i>
+            <span>Language: <strong>Pure Python 3.10+ (PEP 517)</strong></span>
+          </div>
+          <div class="spec-meta-item">
+            <i class="fa-solid fa-shield-halved"></i>
+            <span>Security: <strong>Least-Privilege Role Boundary Check</strong></span>
+          </div>
+          <div class="spec-meta-item">
+            <i class="fa-solid fa-database"></i>
+            <span>Memory: <strong>SQLite Persistent Relational &amp; Vector Store</strong></span>
+          </div>
+        </div>
+
+        <div class="project-spec-actions">
+          <a href="https://github.com/MuhammadSabeel394/my-janne-ai" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+            <i class="fa-brands fa-github"></i> Inspect GitHub Repository
+          </a>
+          <a href="projects.html" class="btn btn-secondary">
+            <i class="fa-solid fa-arrow-left"></i> Return to Projects Gallery
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Metrics Strip -->
+    <section class="container">
+      <div class="metrics-strip">
+        <div class="metric-box">
+          <div class="metric-val">47 / 47</div>
+          <div class="metric-lbl">PyTest Automated Test Suites Passed</div>
+        </div>
+        <div class="metric-box">
+          <div class="metric-val">6</div>
+          <div class="metric-lbl">Specialized Autonomous Agents</div>
+        </div>
+        <div class="metric-box">
+          <div class="metric-val">&lt; 150ms</div>
+          <div class="metric-lbl">Task Intent Classification Latency</div>
+        </div>
+        <div class="metric-box">
+          <div class="metric-val">24</div>
+          <div class="metric-lbl">Engineered Subsystem Modules</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Detailed Specification Body -->
+    <section class="project-spec-body">
+      <div class="container">
+
+        <!-- 1. Architectural Overview -->
+        <div class="spec-section">
+          <h2 class="spec-section-heading"><i class="fa-solid fa-compass"></i> System Overview &amp; Vision</h2>
+          <p class="spec-text">
+            <strong>MY_JANNE</strong> is my personal, voice-first AI assistant and autonomous agent ecosystem designed from the ground up for an AI and Data Science student. It coordinates specialized agents, executes authorized desktop and office automation, performs automated exploratory data analysis, generates and tests custom agents, and prepares for future physical robotics control.
+          </p>
+          <blockquote style="border-left: 3px solid var(--accent-cyan); padding-left: 20px; margin: 20px 0; color: #94a3b8; font-style: italic;">
+            "One personal assistant. One central intelligence architecture. Multiple specialized capabilities. One extensible ecosystem."
+          </blockquote>
+        </div>
+
+        <!-- 2. System Architecture Diagram -->
+        <div class="spec-section">
+          <h2 class="spec-section-heading"><i class="fa-solid fa-network-wired"></i> Architecture Specification</h2>
+          <div class="architecture-box">
+<pre>
+my-janne-ai/
+├── src/my_janne/
+│   ├── core/
+│   │   ├── assistant.py       # JanneAssistant orchestrator & lifecycle
+│   │   ├── router.py          # Automatic intent routing & task classification
+│   │   ├── planner.py         # Multi-step topological task DAG decomposition
+│   │   ├── task_manager.py    # Cancellation signals & task state machine
+│   │   └── permissions.py     # Least-privilege boundary & audit logging
+│   ├── agents/
+│   │   ├── data_science.py    # DataScienceAgent (Automated CSV EDA & Statistics)
+│   │   ├── research.py        # WebResearchAgent (Synthesis with URL citations)
+│   │   ├── file_manager.py    # FileManagerAgent (Safe filesystem organizer)
+│   │   ├── office.py          # OfficeAgent (.docx Word & .xlsx Excel reports)
+│   │   ├── coding.py          # CodingAgent (AST syntax validation & sandbox)
+│   │   └── agent_builder.py   # AgentBuilderAgent (Natural language to custom agent)
+│   ├── voice/
+│   │   ├── pipeline.py        # Full loop: Push-to-Talk audio -> Core -> TTS
+│   │   └── text_to_speech.py  # Native Windows SAPI5 synthesizer
+│   ├── memory/
+│   │   └── persistent.py      # SQLite persistent storage with privacy controls
+│   └── robotics/
+│       ├── safety.py          # Velocity limit monitor & E-Stop handler
+│       └── simulation.py      # 2D physics kinematics engine with obstacle avoidance
+└── tests/                     # 47 comprehensive automated unit and integration tests
+</pre>
+          </div>
+        </div>
+
+        <!-- 3. Problem Statement -->
+        <div class="spec-section">
+          <h2 class="spec-section-heading"><i class="fa-solid fa-triangle-exclamation"></i> Problem Statement</h2>
+          <p class="spec-text">
+            Commercial AI assistants exist as cloud-bound conversational bots with no persistent system memory, no multi-step task decomposition, and no ability to safely operate on local data science files, execute statistical analysis, or interface with physical/simulated hardware under verifiable security boundaries.
+          </p>
+        </div>
+
+        <!-- 4. Engineering Objectives -->
+        <div class="spec-section">
+          <h2 class="spec-section-heading"><i class="fa-solid fa-bullseye"></i> Engineering Objectives</h2>
+          <ul class="spec-objectives-list">
+            <li><strong>Centralized Orchestration:</strong> Construct a deterministic task planner capable of splitting multi-objective user prompts into topological execution graphs.</li>
+            <li><strong>Automated Data Science:</strong> Build a specialized DataScienceAgent that performs missing value imputation, outlier detection, and statistical correlation profiling on CSV datasets.</li>
+            <li><strong>AST Code Sandboxing:</strong> Implement Abstract Syntax Tree parsing to guarantee generated Python code complies with syntax standards prior to isolated test execution.</li>
+            <li><strong>Voice Pipeline with Zero Cloud Overhead:</strong> Integrate push-to-talk audio capture with native Windows SAPI5 TTS text-to-speech for instant, zero-latency feedback.</li>
+            <li><strong>Safety &amp; Robotics Simulation:</strong> Develop a 2D kinematic simulation environment with collision monitors and an emergency E-Stop safety layer.</li>
+          </ul>
+        </div>
+
+        <!-- 5. Verification & Test Suite Results -->
+        <div class="spec-section">
+          <h2 class="spec-section-heading"><i class="fa-solid fa-vial-circle-check"></i> Test Suite Benchmark Results</h2>
+          <p class="spec-text">
+            MY_JANNE maintains a 100% passing rate across all 47 automated unit and integration tests executed via PyTest:
+          </p>
+          <div style="background: rgba(16, 185, 129, 0.08); border: 1px solid rgba(16, 185, 129, 0.25); border-radius: var(--radius-md); padding: 20px; margin-top: 16px;">
+            <div style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--accent-emerald);">
+              <i class="fa-solid fa-check-double"></i> 47 passed in 4.12s (100% Passing Coverage)
+            </div>
+            <div style="font-size: 0.82rem; color: var(--text-secondary); margin-top: 8px;">
+              Subsystems verified: <code>test_permissions.py</code>, <code>test_router_and_planner.py</code>, <code>test_data_science.py</code>, <code>test_voice.py</code>, <code>test_memory.py</code>, <code>test_tools.py</code>, <code>test_robotics.py</code>, and <code>test_advanced_autonomous_features.py</code>.
+            </div>
+          </div>
+        </div>
+
+        <!-- 6. Technologies Used -->
+        <div class="spec-section">
+          <h2 class="spec-section-heading"><i class="fa-solid fa-layer-group"></i> Technologies &amp; Stack</h2>
+          <div class="project-tech-tags" style="margin-top: 16px;">
+            <span class="badge badge-tag" style="font-size: 0.9rem; padding: 6px 14px;">Python 3.10+</span>
+            <span class="badge badge-tag" style="font-size: 0.9rem; padding: 6px 14px;">PyTest (47 Passed)</span>
+            <span class="badge badge-tag" style="font-size: 0.9rem; padding: 6px 14px;">Pydantic Settings</span>
+            <span class="badge badge-tag" style="font-size: 0.9rem; padding: 6px 14px;">SQLite</span>
+            <span class="badge badge-tag" style="font-size: 0.9rem; padding: 6px 14px;">Windows SAPI5</span>
+            <span class="badge badge-tag" style="font-size: 0.9rem; padding: 6px 14px;">SpeechRecognition</span>
+            <span class="badge badge-tag" style="font-size: 0.9rem; padding: 6px 14px;">Google Gemini API</span>
+            <span class="badge badge-tag" style="font-size: 0.9rem; padding: 6px 14px;">OpenAI REST API</span>
+            <span class="badge badge-tag" style="font-size: 0.9rem; padding: 6px 14px;">Python AST</span>
+            <span class="badge badge-tag" style="font-size: 0.9rem; padding: 6px 14px;">2D Kinematics Simulation</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="brand-logo" style="margin-bottom: 12px;">
+            <div class="brand-node"></div>
+            <span>Muhammad Sabeel Afridi</span>
+          </div>
+          <p>AI &amp; Data Science Student | Machine Learning | Python | Data Analytics.</p>
+          <div class="footer-social-row">
+            <a href="https://github.com/MuhammadSabeel394" target="_blank" rel="noopener noreferrer" class="social-icon-btn"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/muhammad-sabeel-afridi" target="_blank" rel="noopener noreferrer" class="social-icon-btn"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.facebook.com/muhammad.sabeel.929457" target="_blank" rel="noopener noreferrer" class="social-icon-btn"><i class="fa-brands fa-facebook"></i></a>
+            <a href="mailto:sabeelafridi394@gmail.com" class="social-icon-btn"><i class="fa-solid fa-envelope"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Pages</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="skills.html">Technical Skills</a></li>
+            <li><a href="projects.html">Projects</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Credentials</h4>
+          <ul class="footer-links">
+            <li><a href="certifications.html">Certifications (19+)</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Inquiries</h4>
+          <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 14px;">
+            Open to discussing autonomous system architecture.
+          </p>
+          <a href="contact.html" class="btn btn-primary btn-sm"><i class="fa-solid fa-paper-plane"></i> Contact Me</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; <span id="copyrightYear">2026</span> Muhammad Sabeel Afridi · All rights reserved.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/portfolio-data-default.js"></script>
+  <script src="js/data-store.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

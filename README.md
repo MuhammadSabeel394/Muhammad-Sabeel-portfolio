@@ -1,5 +1,7 @@
 # Muhammad Sabeel — AI & Data Science Portfolio Platform
 
+# live link  ->  https://muhammadsabeel394.github.io/Muhammad-Sabeel-portfolio/
+
 > **AI & Data Science Student | Machine Learning | Python | Data Analytics**  
 > Building intelligent systems, autonomous multi-agent ecosystems, and reliable machine learning pipelines.
 

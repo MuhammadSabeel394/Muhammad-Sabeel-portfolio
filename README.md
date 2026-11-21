@@ -1,4 +1,4 @@
-# Muhammad Sabeel Afridi — AI & Data Science Portfolio Platform
+# Muhammad Sabeel — AI & Data Science Portfolio Platform
 
 > **AI & Data Science Student | Machine Learning | Python | Data Analytics**  
 > Building intelligent systems, autonomous multi-agent ecosystems, and reliable machine learning pipelines.
@@ -13,7 +13,7 @@
 
 ## 🌟 Executive Overview
 
-This repository hosts the personal portfolio website of **Muhammad Sabeel Afridi**, transformed into an innovative, multi-page platform inspired by the **MY_JANNE** autonomous agent concept.
+This repository hosts the personal portfolio website of **Muhammad Sabeel**, transformed into an innovative, multi-page platform inspired by the **MY_JANNE** autonomous agent concept.
 
 It replaces all outdated web development descriptions with a focused, verifiable identity in **Artificial Intelligence, Machine Learning, Deep Learning, and Data Science**.
 
@@ -101,6 +101,6 @@ To add new certifications, projects, internships, or achievements:
 ## 📬 Contact & Inquiries
 
 - **Name:** Muhammad Sabeel Afridi
-- **Email:** [sabeelafridi394@gmail.com](mailto:sabeelafridi394@gmail.com)
+- **Email:** [m.sabeelafd@gmail.com](mailto:m.sabeelafd@gmail.com)
 - **GitHub:** [github.com/MuhammadSabeel394](https://github.com/MuhammadSabeel394)
 - **LinkedIn:** [linkedin.com/in/muhammad-sabeel-afridi](https://www.linkedin.com/in/muhammad-sabeel-afridi)
